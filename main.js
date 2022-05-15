@@ -76,6 +76,22 @@ function createNewMember(){
     newTeamMember.proPic = newMemberProPic
     // // 4. Pusho nell'array che contiene i membri del team il nuovo membro
     teamMembers.push(newTeamMember)
+    console.log(newTeamMember)
+    // 5. Creo per il nuovo membro del team una card con le informazioni dinamiche da incollare nell'HTML 
+    const teamCard = `
+    <div class="team-card">
+    <div class="card-image">
+      <img src=${newMemberProPic}/>
+    </div>
+    <div class="card-text">
+      <h3>${newMemberName}</h3>
+      <p>${newMemberRole}</p>
+    </div>
+  </div>
+  `
+    // 5b. Incollo la card nell'HTML
+    teamMembersContainer.innerHTML += teamCard
 }
+
 
 
