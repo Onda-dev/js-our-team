@@ -91,6 +91,10 @@ function createNewMember(){
   `
     // 5b. Incollo la card nell'HTML
     teamMembersContainer.innerHTML += teamCard
+    // 5c. Azzero i valori del form
+    document.getElementById("name").value = ""
+    document.getElementById("role").value = ""
+    document.getElementById("image").value = ""
 }
 
 
