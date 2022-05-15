@@ -6,32 +6,32 @@
 const teamMembers = [
     {
         name: "Wanye Barnett",
-        proPic: "img/wayne-barnett-founder-ceo.jpg" alt="Wayne Barnett",
+        proPic: "https://picsum.photos/400",
         role: "Founder & CEO"
     },
     {
         name: "Angela Caroll",
-        proPic: "img/angela-caroll-chief-editor.jpg" alt="Angela Caroll",
+        proPic: "https://picsum.photos/400",
         role: "Chief Editor"
     },    
     {
         name: "Walter Gordon",
-        proPic: "img/walter-gordon-office-manager.jpg" alt="Walter Gordon",
+        proPic: "https://picsum.photos/400",
         role: "Office Manager"
     },    
     {
         name: "Angela Lopez",
-        proPic: "img/angela-lopez-social-media-manager.jpg" alt="Angela Lopez",
+        proPic: "https://picsum.photos/400",
         role: "Social Media Manager"
     },    
     {
         name: "Ivan Perisic",
-        proPic: "scott-estrada-developer" alt="Ivan Perisic",
+        proPic: "https://picsum.photos/400",
         role: "Developer"
     },    
     {
         name: "Barbara Ramos",
-        proPic: "img/barbara-ramos-graphic-designer.jpg" alt="Barbara Ramos",
+        proPic: "https://picsum.photos/400",
         role: "Graphic Designer"
     },
 ]
@@ -50,4 +50,6 @@ for (let i = 0; i < teamMembers.length; i++) {
     </div>
   </div>
   `
+// 3b. Incollo le card nell'HTML
+teamMembersContainer.innerHTML += teamCard
 }
