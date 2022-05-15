@@ -48,8 +48,8 @@ for (let i = 0; i < teamMembers.length; i++) {
       <h3>${teamMembers[i].name}</h3>
       <p>${teamMembers[i].role}</p>
     </div>
-  </div>
-  `
+    </div>
+    `
 // 3b. Incollo le card nell'HTML
 teamMembersContainer.innerHTML += teamCard
 }
@@ -87,8 +87,8 @@ function createNewMember(){
       <h3>${newMemberName}</h3>
       <p>${newMemberRole}</p>
     </div>
-  </div>
-  `
+    </div>
+    `
     // 5b. Incollo la card nell'HTML
     teamMembersContainer.innerHTML += teamCard
     // 5c. Azzero i valori del form
