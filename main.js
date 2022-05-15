@@ -6,32 +6,48 @@
 const teamMembers = [
     {
         name: "Wanye Barnett",
-        proPic: "https://i.picsum.photos/id/548/200/200.jpg?hmac=OSCQ-YL2a-5iYm7-5vVwigtt78bNIZFxNRaWP8pZ_bw",
+        proPic: "img/wayne-barnett-founder-ceo.jpg" alt="Wayne Barnett",
         role: "Founder & CEO"
     },
     {
         name: "Angela Caroll",
-        proPic: "https://i.picsum.photos/id/548/200/200.jpg?hmac=OSCQ-YL2a-5iYm7-5vVwigtt78bNIZFxNRaWP8pZ_bw",
+        proPic: "img/angela-caroll-chief-editor.jpg" alt="Angela Caroll",
         role: "Chief Editor"
     },    
     {
         name: "Walter Gordon",
-        proPic: "https://i.picsum.photos/id/548/200/200.jpg?hmac=OSCQ-YL2a-5iYm7-5vVwigtt78bNIZFxNRaWP8pZ_bw",
+        proPic: "img/walter-gordon-office-manager.jpg" alt="Walter Gordon",
         role: "Office Manager"
     },    
     {
         name: "Angela Lopez",
-        proPic: "https://i.picsum.photos/id/548/200/200.jpg?hmac=OSCQ-YL2a-5iYm7-5vVwigtt78bNIZFxNRaWP8pZ_bw",
+        proPic: "img/angela-lopez-social-media-manager.jpg" alt="Angela Lopez",
         role: "Social Media Manager"
     },    
     {
         name: "Ivan Perisic",
-        proPic: "https://i.picsum.photos/id/548/200/200.jpg?hmac=OSCQ-YL2a-5iYm7-5vVwigtt78bNIZFxNRaWP8pZ_bw",
+        proPic: "scott-estrada-developer" alt="Ivan Perisic",
         role: "Developer"
     },    
     {
         name: "Barbara Ramos",
-        proPic: "https://i.picsum.photos/id/548/200/200.jpg?hmac=OSCQ-YL2a-5iYm7-5vVwigtt78bNIZFxNRaWP8pZ_bw",
+        proPic: "img/barbara-ramos-graphic-designer.jpg" alt="Barbara Ramos",
         role: "Graphic Designer"
     },
 ]
+// 2. Estrapolo dall'HTML il container in cui inserire le card dei membri del team
+const teamMembersContainer = document.querySelector(".team-container")
+// 3. Creo per ogni membro del team una card con le informazioni dinamiche da incollare nell'HTML 
+for (let i = 0; i < teamMembers.length; i++) {
+    const teamCard = `
+    <div class="team-card">
+    <div class="card-image">
+      <img src=${teamMembers[i].proPic}/>
+    </div>
+    <div class="card-text">
+      <h3>${teamMembers[i].name}</h3>
+      <p>${teamMembers[i].role}</p>
+    </div>
+  </div>
+  `
+}
