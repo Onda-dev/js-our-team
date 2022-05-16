@@ -6,32 +6,32 @@
 const teamMembers = [
     {
         name: "Wanye Barnett",
-        proPic: "https://picsum.photos/400",
+        proPic: "img/wayne-barnett-founder-ceo.jpg",
         role: "Founder & CEO"
     },
     {
         name: "Angela Caroll",
-        proPic: "https://picsum.photos/400",
+        proPic: "img/angela-caroll-chief-editor.jpg",
         role: "Chief Editor"
     },    
     {
         name: "Walter Gordon",
-        proPic: "https://picsum.photos/400",
+        proPic: "img/walter-gordon-office-manager.jpg",
         role: "Office Manager"
     },    
     {
         name: "Angela Lopez",
-        proPic: "https://picsum.photos/400",
+        proPic: "img/angela-lopez-social-media-manager.jpg",
         role: "Social Media Manager"
     },    
     {
         name: "Ivan Perisic",
-        proPic: "https://picsum.photos/400",
+        proPic: "img/scott-estrada-developer.jpg",
         role: "Developer"
     },    
     {
         name: "Barbara Ramos",
-        proPic: "https://picsum.photos/400",
+        proPic: "img/barbara-ramos-graphic-designer.jpg",
         role: "Graphic Designer"
     },
 ]
